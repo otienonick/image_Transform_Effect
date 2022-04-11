@@ -133,3 +133,12 @@ span{
 .img-box:hover .main-img{
     left: 54%;
 }
+
+/* preloader styles */
+#preloader{
+    background: #fff url(./portfolio_site_img/loader.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
