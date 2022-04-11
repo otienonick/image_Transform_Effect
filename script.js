@@ -7,8 +7,23 @@ $( document ).ready(function() {
         backSpeed:30,
         loop:true
     })
+    // preloader
         setTimeout(function(){
         $('body').addClass('loaded');
     }, 3500);
 
+
 });
+
+    //opening/closing images
+    var fullImgBox = document.getElementById('fullImgBox');
+    var fullImg = document.getElementById('fullImg');
+
+    function openFullImg(pic){
+        fullImgBox.style.display = 'flex';
+        fullImg.src = pic;
+    };
+    function closeFullImg(){
+        fullImgBox.style.display = 'none';
+
+    }
