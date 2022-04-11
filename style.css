@@ -118,7 +118,7 @@ span{
 
 }
 .img-box .main-img{
-    animation: 1s  slidein;
+    animation: 6s  slidein;
 
 }
 
@@ -135,10 +135,26 @@ span{
 }
 
 /* preloader styles */
-#preloader{
-    background: #fff url(./portfolio_site_img/loader.gif) no-repeat center;
-    height: 100vh;
-    width: 100%;
+#loader-wrapper .loader-section {
     position: fixed;
-    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #edf2fc url(./portfolio_site_img/fluid-loader.gif) no-repeat center;
+    z-index: 1000;
+}
+ 
+
+#loader {
+    z-index: 1001;
+}
+
+.loaded #loader-wrapper {
+    transform: translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
 }

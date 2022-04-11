@@ -7,10 +7,8 @@ $( document ).ready(function() {
         backSpeed:30,
         loop:true
     })
-    var loader = document.getElementById('preloader');
-    window.addEventListener('load',function(){
-        loader.style.display = 'none';
-
-    })
+        setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3500);
 
 });
