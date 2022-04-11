@@ -296,3 +296,19 @@ span{
 .fullImgCard a i{
     margin-left: 5px;
 }
+
+/* footer styles */
+
+
+footer{
+    background: #ff4321;
+    padding: 20px 20px;
+    text-align: center;
+}
+footer span{
+    font-size: 20px;
+    color: #edf2fc;
+    font-family: 'Poppins', sans-serif;
+}
+
+
